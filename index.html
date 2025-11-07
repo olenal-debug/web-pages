@@ -10,138 +10,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app">
+    <div class="app-container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="sidebar__header">
-                <button class="sidebar__menu-button sidebar__menu-button--active">
-                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8 2.5L12.5 4.5V11.5L8 13.5L3.5 11.5V4.5L8 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+            <div class="sidebar-header">
+                <div class="sidebar-menu-button active">
+                    <div class="icon-wrapper">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2.5L11.5 6H10V12H6V6H4.5L8 2.5Z" fill="#FAFAFA"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div class="sidebar__content">
-                <div class="sidebar__group">
-                    <nav class="sidebar__menu">
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 12H14M2 8H14M2 4H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+            <div class="sidebar-content">
+                <div class="sidebar-group">
+                    <div class="sidebar-menu">
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2V14H14V2H2ZM3 3H13V13H3V3Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6 6H10M6 10H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 4H14M2 8H14M2 12H14" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6 6H10M6 10H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2V14M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 14V2M14 8H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14V2M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <div class="sidebar__menu-item sidebar__menu-item--active">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </div>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6 6H10M6 10H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <circle cx="8" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M2 14C2 10 5 8 8 8C11 8 14 10 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2C10.21 2 12 3.79 12 6C12 8.21 10.21 10 8 10C5.79 10 4 8.21 4 6C4 3.79 5.79 2 8 2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                    </nav>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__footer">
-                <div class="sidebar__group">
-                    <nav class="sidebar__menu">
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2L8 8L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+            <div class="sidebar-footer">
+                <div class="sidebar-group">
+                    <div class="sidebar-menu">
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="6" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                        <button class="sidebar__menu-item">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 8L14 8M8 2L14 8L8 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <button class="sidebar-menu-item">
+                            <div class="sidebar-menu-button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 8H14M8 2V14" stroke="#0A0A0A" stroke-width="1"/>
+                                </svg>
+                            </div>
                         </button>
-                    </nav>
+                    </div>
                 </div>
-                <div class="sidebar__avatar">
+                <div class="sidebar-menu-button avatar-button">
                     <div class="avatar">
-                        <span class="avatar__initials">U</span>
+                        <div class="avatar-bg"></div>
                     </div>
                 </div>
             </div>
         </aside>
 
         <!-- Main Content -->
-        <main class="main">
-            <div class="main__wrapper">
+        <main class="main-wrapper">
+            <div class="main-content">
                 <!-- Top Bar -->
                 <div class="top-bar">
-                    <div class="top-bar__breadcrumb">
-                        <button class="top-bar__button">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 8H14M6 4L2 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <div class="breadcrumb">
+                        <button class="header-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                         </button>
-                        <div class="top-bar__separator"></div>
-                        <div class="breadcrumb">
-                            <div class="breadcrumb__item">
-                                <span class="breadcrumb__text">Master Items</span>
-                                <svg class="icon icon--small" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                    <path d="M3.5 5.5L7.5 9.5L11.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class="separator"></div>
+                        <div class="breadcrumb-items">
+                            <div class="breadcrumb-item">
+                                <p>Master Items</p>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.5L7.5 8.5L11.5 4.5" stroke="#737373" stroke-width="1"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="top-bar__actions">
-                        <button class="button button--ghost">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <div class="support-actions">
+                        <button class="button-text">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8" cy="8" r="6" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Help Center</span>
                         </button>
-                        <button class="button button--ghost">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2L8 8L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="button-text">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>AI Assistant</span>
                         </button>
@@ -149,149 +170,147 @@
                 </div>
 
                 <!-- Separator -->
-                <div class="separator"></div>
+                <div class="separator-line"></div>
 
                 <!-- Header -->
                 <div class="header">
-                    <div class="header__tabs">
-                        <div class="tabs">
-                            <button class="tabs__trigger tabs__trigger--active">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6L11 9L12 13L8 11L4 13L5 9L2 6L6 6L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <div class="header-flex">
+                        <div class="header-left">
+                            <div class="tabs">
+                                <button class="tab-trigger active">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" fill="#0A0A0A"/>
+                                    </svg>
+                                    <span>Liquid Add.</span>
+                                </button>
+                                <button class="tab-trigger">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Dry Add.</span>
+                                </button>
+                                <button class="tab-trigger">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Chemicals</span>
+                                </button>
+                                <button class="tab-trigger">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="6" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Containers</span>
+                                </button>
+                                <button class="tab-trigger">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Packaging</span>
+                                </button>
+                                <button class="tab-trigger">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Finished</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="actions">
+                                <button class="button-icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2V14M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                </button>
+                                <button class="button-icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                        <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                        <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="separator"></div>
+                            <button class="button-primary">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2V14M2 8H14" stroke="#FAFAFA" stroke-width="1"/>
                                 </svg>
-                                <span>Liquid Add.</span>
-                            </button>
-                            <button class="tabs__trigger">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Dry Add.</span>
-                            </button>
-                            <button class="tabs__trigger">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                <span>Chemicals</span>
-                            </button>
-                            <button class="tabs__trigger">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                                </svg>
-                                <span>Containers</span>
-                            </button>
-                            <button class="tabs__trigger">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Packaging</span>
-                            </button>
-                            <button class="tabs__trigger">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2.5L12.5 4.5V11.5L8 13.5L3.5 11.5V4.5L8 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Finished</span>
+                                <span>Create Item</span>
                             </button>
                         </div>
-                    </div>
-                    <div class="header__actions">
-                        <div class="header__actions-group">
-                            <button class="button button--icon">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                            </button>
-                            <button class="button button--icon">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                    <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                    <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="header__separator"></div>
-                        <button class="button button--primary">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                            <span>Create Item</span>
-                        </button>
                     </div>
                 </div>
 
                 <!-- Filter Bar -->
                 <div class="filter-bar">
-                    <div class="filter-bar__row">
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <circle cx="8" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M2 14C2 10 5 8 8 8C11 8 14 10 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <div class="filter-row">
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8" cy="8" r="6" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Owner</span>
                         </button>
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2L2 6L8 10L14 6L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Organic</span>
                         </button>
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2C10 2 12 4 12 6C12 8 10 10 8 10C6 10 4 8 4 6C4 4 6 2 8 2Z" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M2 14L8 10L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Region</span>
                         </button>
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2L10 6L14 6L11 9L12 13L8 11L4 13L5 9L2 6L6 6L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Variety</span>
                         </button>
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M6 4V12M10 4V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Vintage</span>
                         </button>
-                        <button class="button button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2C10 2 12 4 12 6C12 8 10 10 8 10C6 10 4 8 4 6C4 4 6 2 8 2Z" stroke="currentColor" stroke-width="1.5"/>
+                        <button class="filter-button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2L10 6H14L11 9L12 13L8 11L4 13L5 9L2 6H6L8 2Z" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Allergens</span>
                         </button>
-                        <button class="button button--ghost button--filter">
-                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <button class="filter-button transparent">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V14M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
                             </svg>
                             <span>Property</span>
                         </button>
-                        <div class="filter-bar__spacer"></div>
-                        <button class="button button--ghost">
+                        <div class="filter-spacer"></div>
+                        <button class="button-text-muted">
                             <span>Hide Quick Filter</span>
                         </button>
                     </div>
-                    <div class="filter-bar__row">
-                        <div class="filter-bar__left">
-                            <button class="button button--ghost">
+                    <div class="filter-row">
+                        <div class="filter-left">
+                            <button class="button-text">
                                 <span>[My View]</span>
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3.5 5.5L8 10L12.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.5L7.5 8.5L11.5 4.5" stroke="#0A0A0A" stroke-width="1"/>
                                 </svg>
                             </button>
-                            <div class="filter-bar__separator"></div>
-                            <button class="button button--ghost">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 4H14M2 8H14M2 12H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <div class="separator"></div>
+                            <button class="button-text">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2H14V14H2V2Z" stroke="#0A0A0A" stroke-width="1"/>
                                 </svg>
                                 <span>Filter</span>
                             </button>
                         </div>
-                        <div class="filter-bar__right">
-                            <button class="button button--ghost">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
-                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <div class="filter-right">
+                            <button class="button-text">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="6" stroke="#0A0A0A" stroke-width="1"/>
                                 </svg>
                                 <span>Display</span>
                             </button>
@@ -302,71 +321,71 @@
                 <!-- Widgets -->
                 <div class="widgets">
                     <div class="widget">
-                        <div class="widget__header">
-                            <span class="widget__label">Label</span>
-                            <span class="widget__change widget__change--positive">+15.11%</span>
+                        <div class="widget-header">
+                            <p class="widget-label">Label</p>
+                            <p class="widget-change positive">+15.11%</p>
                         </div>
-                        <div class="widget__content">
-                            <span class="widget__value">37</span>
-                            <div class="widget__chart">
-                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none">
-                                    <path d="M0 10L10 8L20 6L30 4L40 5L50 3L60 2L70 4L80 6L90 8L100 10L108 12" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        <div class="widget-content">
+                            <p class="widget-value">37</p>
+                            <div class="widget-graph">
+                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6L18 4L36 5L54 3L72 6L90 4L108 5" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <div class="widget">
-                        <div class="widget__header">
-                            <span class="widget__label">Label</span>
-                            <span class="widget__change widget__change--positive">+15.11%</span>
+                        <div class="widget-header">
+                            <p class="widget-label">Label</p>
+                            <p class="widget-change positive">+15.11%</p>
                         </div>
-                        <div class="widget__content">
-                            <span class="widget__value">37</span>
-                            <div class="widget__chart">
-                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none">
-                                    <path d="M0 10L10 8L20 6L30 4L40 5L50 3L60 2L70 4L80 6L90 8L100 10L108 12" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        <div class="widget-content">
+                            <p class="widget-value">37</p>
+                            <div class="widget-graph">
+                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6L18 4L36 5L54 3L72 6L90 4L108 5" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <div class="widget">
-                        <div class="widget__header">
-                            <span class="widget__label">Label</span>
-                            <span class="widget__change widget__change--positive">+15.11%</span>
+                        <div class="widget-header">
+                            <p class="widget-label">Label</p>
+                            <p class="widget-change positive">+15.11%</p>
                         </div>
-                        <div class="widget__content">
-                            <span class="widget__value">37</span>
-                            <div class="widget__chart">
-                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none">
-                                    <path d="M0 10L10 8L20 6L30 4L40 5L50 3L60 2L70 4L80 6L90 8L100 10L108 12" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        <div class="widget-content">
+                            <p class="widget-value">37</p>
+                            <div class="widget-graph">
+                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6L18 4L36 5L54 3L72 6L90 4L108 5" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <div class="widget">
-                        <div class="widget__header">
-                            <span class="widget__label">Label</span>
-                            <span class="widget__change widget__change--positive">+15.11%</span>
+                        <div class="widget-header">
+                            <p class="widget-label">Label</p>
+                            <p class="widget-change positive">+15.11%</p>
                         </div>
-                        <div class="widget__content">
-                            <span class="widget__value">37</span>
-                            <div class="widget__chart">
-                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none">
-                                    <path d="M0 10L10 8L20 6L30 4L40 5L50 3L60 2L70 4L80 6L90 8L100 10L108 12" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        <div class="widget-content">
+                            <p class="widget-value">37</p>
+                            <div class="widget-graph">
+                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6L18 4L36 5L54 3L72 6L90 4L108 5" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <div class="widget">
-                        <div class="widget__header">
-                            <span class="widget__label">Label</span>
-                            <span class="widget__change widget__change--positive">+15.11%</span>
+                        <div class="widget-header">
+                            <p class="widget-label">Label</p>
+                            <p class="widget-change positive">+15.11%</p>
                         </div>
-                        <div class="widget__content">
-                            <span class="widget__value">37</span>
-                            <div class="widget__chart">
-                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none">
-                                    <path d="M0 10L10 8L20 6L30 4L40 5L50 3L60 2L70 4L80 6L90 8L100 10L108 12" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                        <div class="widget-content">
+                            <p class="widget-value">37</p>
+                            <div class="widget-graph">
+                                <svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6L18 4L36 5L54 3L72 6L90 4L108 5" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
                                 </svg>
                             </div>
                         </div>
@@ -375,1505 +394,251 @@
 
                 <!-- Master Items List -->
                 <div class="master-items-list">
-                    <div class="table">
-                        <div class="table__header">
-                            <div class="table__column table__column--checkbox">
-                                <div class="table__head-cell">
-                                    <button class="checkbox">
-                                        <div class="checkbox__input"></div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 160px;">
-                                <div class="table__head-cell">
-                                    <span>Item ID</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 230px;">
-                                <div class="table__head-cell">
-                                    <span>Description</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 72px;">
-                                <div class="table__head-cell">
-                                    <span>UoM</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Attachments</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 85px;">
-                                <div class="table__head-cell">
-                                    <span>Status</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 200px;">
-                                <div class="table__head-cell">
-                                    <span>Vendor</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 180px;">
-                                <div class="table__head-cell">
-                                    <span>Tags</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 130px;">
-                                <div class="table__head-cell">
-                                    <span>Type</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Country of<br>origin</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 140px;">
-                                <div class="table__head-cell">
-                                    <span>Manufacturer</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Prod. Date</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Expiry Date</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 150px;">
-                                <div class="table__head-cell">
-                                    <span>Variety</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Region</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 88px;">
-                                <div class="table__head-cell">
-                                    <span>Vintage</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 140px;">
-                                <div class="table__head-cell">
-                                    <span>Allergens</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Price</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Total Qty</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 120px;">
-                                <div class="table__head-cell">
-                                    <span>Total Value</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column" style="width: 140px;">
-                                <div class="table__head-cell">
-                                    <span>Created Date</span>
-                                    <svg class="icon icon--small" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                        <path d="M3 2L5.5 5.5L8 2M3 9L5.5 5.5L8 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="table__column table__column--actions" style="width: 40px;">
-                                <div class="table__head-cell"></div>
-                            </div>
-                        </div>
-                        <div class="table__body">
-                            <!-- Row 1 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-24-SHIRAZ-CONC</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Red grape concentrate (Shiraz) for enrichment.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">R</span>
-                                            </div>
-                                            <span>Red River Wines Co.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-badges">
-                                            <span class="badge">Grape concentrate</span>
-                                            <span class="badge">Colour</span>
-                                            <span class="badge">Sugar adjust</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Tarac Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Shiraz</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Riverland</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Sulfites</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>38,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025 16:56</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </th>
+                                    <th class="item-id-col">
+                                        Item ID
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="description-col">
+                                        Description
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="uom-col">
+                                        UoM
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="attachments-col">Attachments</th>
+                                    <th class="status-col">
+                                        Status
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="vendor-col">
+                                        Vendor
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="tags-col">Tags</th>
+                                    <th class="type-col">
+                                        Type
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="manufacturer-col">
+                                        Manufacturer
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="prod-date-col">
+                                        Prod. Date
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="expiry-date-col">
+                                        Expiry Date
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort-icon">
+                                            <path d="M2.75 3.67L5.5 1.83L8.25 3.67M2.75 7.33L5.5 9.17L8.25 7.33" stroke="#737373" stroke-width="1"/>
+                                        </svg>
+                                    </th>
+                                    <th class="actions-col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </td>
+                                    <td class="item-id-col">LA-24-SHIRAZ-CONC</td>
+                                    <td class="description-col">Red grape concentrate (Shiraz) for enrichment.</td>
+                                    <td class="uom-col">L</td>
+                                    <td class="attachments-col">-</td>
+                                    <td class="status-col">
+                                        <span class="status-badge active">Active</span>
+                                    </td>
+                                    <td class="vendor-col">Vendor A</td>
+                                    <td class="tags-col">-</td>
+                                    <td class="type-col">Liquid</td>
+                                    <td class="manufacturer-col">Manufacturer 1</td>
+                                    <td class="prod-date-col">2024-01-15</td>
+                                    <td class="expiry-date-col">2025-01-15</td>
+                                    <td class="actions-col">
+                                        <button class="table-action-button">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
                                             </svg>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 2 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-24-JUICE-WHITE-LOWBRIX</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Low Brix juice for alcohol adjustment and mouthfeel.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>2 files</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--pink">
-                                                <span class="avatar__initials">S</span>
-                                            </div>
-                                            <span>Sunset Ridge Wines</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-badges">
-                                            <span class="badge">Juice</span>
-                                            <span class="badge">Brix reduction</span>
-                                            <span class="badge">White blend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Juice</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Australian Juice Co.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>11/11/2022</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>11/11/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Merlot</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Hunter Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>18,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/28/2025 15:45</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </td>
+                                    <td class="item-id-col">LA-24-JUICE-WHITE-LOWBRIX</td>
+                                    <td class="description-col">Low Brix juice for alcohol adjustment and mouthfeel.</td>
+                                    <td class="uom-col">L</td>
+                                    <td class="attachments-col">-</td>
+                                    <td class="status-col">
+                                        <span class="status-badge active">Active</span>
+                                    </td>
+                                    <td class="vendor-col">Vendor B</td>
+                                    <td class="tags-col">-</td>
+                                    <td class="type-col">Liquid</td>
+                                    <td class="manufacturer-col">Manufacturer 2</td>
+                                    <td class="prod-date-col">2024-01-14</td>
+                                    <td class="expiry-date-col">2025-01-14</td>
+                                    <td class="actions-col">
+                                        <button class="table-action-button">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
                                             </svg>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 3 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-24-MERLOT-CONC</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Merlot-based concentrated wine for blending.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--red">
-                                                <span class="avatar__initials">B</span>
-                                            </div>
-                                            <span>Barossa Creek</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-badges">
-                                            <span class="badge">Blend</span>
-                                            <span class="badge">Sugar</span>
-                                            <span class="badge">Rich mouthfeel</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Tarac Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>8/22/2022</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>8/22/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Shiraz</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Barossa Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Sulfites</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>24,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/27/2025 14:30</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </td>
+                                    <td class="item-id-col">LA-24-MERLOT-CONC</td>
+                                    <td class="description-col">Merlot-based concentrated wine for blending.</td>
+                                    <td class="uom-col">L</td>
+                                    <td class="attachments-col">-</td>
+                                    <td class="status-col">
+                                        <span class="status-badge">Inactive</span>
+                                    </td>
+                                    <td class="vendor-col">Vendor C</td>
+                                    <td class="tags-col">-</td>
+                                    <td class="type-col">Liquid</td>
+                                    <td class="manufacturer-col">Manufacturer 3</td>
+                                    <td class="prod-date-col">2024-01-13</td>
+                                    <td class="expiry-date-col">2025-01-13</td>
+                                    <td class="actions-col">
+                                        <button class="table-action-button">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
                                             </svg>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 4 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-A125</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Red grape concentrate for enrichment.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">S</span>
-                                            </div>
-                                            <span>Sunset Valley Winery</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>WineX Solutions</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Cabernet Sauvignon</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Riverland</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>12,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/26/2025 13:15</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </td>
+                                    <td class="item-id-col">LA-CONC-A125</td>
+                                    <td class="description-col">Red grape concentrate for enrichment.</td>
+                                    <td class="uom-col">L</td>
+                                    <td class="attachments-col">-</td>
+                                    <td class="status-col">
+                                        <span class="status-badge active">Active</span>
+                                    </td>
+                                    <td class="vendor-col">Vendor A</td>
+                                    <td class="tags-col">-</td>
+                                    <td class="type-col">Liquid</td>
+                                    <td class="manufacturer-col">Manufacturer 1</td>
+                                    <td class="prod-date-col">2024-01-12</td>
+                                    <td class="expiry-date-col">2025-01-12</td>
+                                    <td class="actions-col">
+                                        <button class="table-action-button">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
                                             </svg>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 5 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-B225</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Low Brix juice for alcohol adjustment and mouthfeel.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">T</span>
-                                            </div>
-                                            <span>Tamar Valley Vineyard</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Tarac Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Merlot</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Hunter Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2023</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-badges">
-                                            <span class="badge">Fish</span>
-                                            <span class="badge">Sulfites</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>18,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/25/2025 12:00</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-col">
+                                        <input type="checkbox" class="checkbox">
+                                    </td>
+                                    <td class="item-id-col">LA-CONC-B225</td>
+                                    <td class="description-col">Low Brix juice for alcohol adjustment and mouthfeel.</td>
+                                    <td class="uom-col">L</td>
+                                    <td class="attachments-col">-</td>
+                                    <td class="status-col">
+                                        <span class="status-badge active">Active</span>
+                                    </td>
+                                    <td class="vendor-col">Vendor B</td>
+                                    <td class="tags-col">-</td>
+                                    <td class="type-col">Liquid</td>
+                                    <td class="manufacturer-col">Manufacturer 2</td>
+                                    <td class="prod-date-col">2024-01-11</td>
+                                    <td class="expiry-date-col">2025-01-11</td>
+                                    <td class="actions-col">
+                                        <button class="table-action-button">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="4" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="8" r="1" fill="#0A0A0A"/>
+                                                <circle cx="8" cy="12" r="1" fill="#0A0A0A"/>
                                             </svg>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 6 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-C325</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Low Brix juice for alcohol adjustment and mouthfeel.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">M</span>
-                                            </div>
-                                            <span>Margaret River Estate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Juice</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Tarac Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Shiraz</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Barossa Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2023</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>16,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/20/2025 06:10</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 7 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-D425</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Red grape concentrate for enrichment.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">C</span>
-                                            </div>
-                                            <span>Coonawarra Cellars</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>WineX Solutions</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Semillon</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Riverland</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2022</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Sulfites</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>25,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/21/2025 07:20</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 8 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-E525</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Low Brix juice for alcohol adjustment and mouthfeel.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Archived</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">B</span>
-                                            </div>
-                                            <span>Barossa Valley Wine Co.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Juice</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>Tarac Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Merlot</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Hunter Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2023</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>500 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/22/2025 08:30</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 9 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-F725</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Red grape concentrate for enrichment.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Inactive</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">H</span>
-                                            </div>
-                                            <span>Hunter Valley Wines</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <span>—</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Concentrat</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>WineX Solutions</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Shiraz</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Barossa Valley</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Sulfites</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>38,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/23/2025 09:40</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Row 10 -->
-                            <div class="table__row">
-                                <div class="table__column table__column--checkbox">
-                                    <div class="table__cell">
-                                        <button class="checkbox">
-                                            <div class="checkbox__input"></div>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 160px;">
-                                    <div class="table__cell">
-                                        <span>LA-CONC-G825</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 230px;">
-                                    <div class="table__cell">
-                                        <span>Low Brix juice for alcohol adjustment and mouthfeel.</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 72px;">
-                                    <div class="table__cell">
-                                        <span class="badge">L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>1 file</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 85px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--success">Active</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 200px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-avatar">
-                                            <div class="avatar avatar--blue">
-                                                <span class="avatar__initials">Y</span>
-                                            </div>
-                                            <span>Yarra Valley Vineyards</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 180px;">
-                                    <div class="table__cell">
-                                        <div class="table__cell-badges">
-                                            <span class="badge">Bentonite</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 130px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Juice</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--outline">Australia</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>WineX Solutions</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>5/29/2025</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>6/15/2026</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 150px;">
-                                    <div class="table__cell">
-                                        <span class="badge badge--red">Semillon</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Riverland</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 88px;">
-                                    <div class="table__cell">
-                                        <span class="badge">2024</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span class="badge">Sulfites</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$3.60/L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>45,000 L</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 120px;">
-                                    <div class="table__cell">
-                                        <span>$33.456.83</span>
-                                    </div>
-                                </div>
-                                <div class="table__column" style="width: 140px;">
-                                    <div class="table__cell">
-                                        <span>5/24/2025 10:50</span>
-                                    </div>
-                                </div>
-                                <div class="table__column table__column--actions" style="width: 40px;">
-                                    <div class="table__cell">
-                                        <button class="table__action">
-                                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <circle cx="8" cy="4" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
 
-                <!-- Table Footer -->
-                <div class="table-footer">
-                    <div class="table-footer__left">
-                        <div class="table-footer__label">
-                            <span>0 of 37 selected</span>
+                    <!-- Table Footer -->
+                    <div class="table-footer">
+                        <div class="footer-left">
+                            <div class="footer-label">
+                                <p>0 of 37 selected</p>
+                            </div>
+                            <div class="select-wrapper">
+                                <select class="select">
+                                    <option>Bulk Action Name</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="select">
-                            <button class="select__trigger">
-                                <span>Bulk Action Name</span>
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M3.5 5.5L8 10L12.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                        <div class="footer-center">
+                            <p>Rows 1-50</p>
+                            <p>of 397</p>
                         </div>
-                    </div>
-                    <div class="table-footer__center">
-                        <span>Rows 1-50</span>
-                        <span>of 397</span>
-                    </div>
-                    <div class="table-footer__right">
-                        <div class="table-footer__pagination">
-                            <span>Rows per page</span>
-                            <div class="select select--small">
-                                <button class="select__trigger">
-                                    <span>1-50</span>
-                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M3.5 5.5L8 10L12.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class="footer-right">
+                            <div class="rows-per-page">
+                                <p>Rows per page</p>
+                                <div class="select-wrapper small">
+                                    <select class="select">
+                                        <option>1-50</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="footer-actions">
+                                <button class="button-secondary">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2V14M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
                                     </svg>
+                                    <span>Load More</span>
+                                </button>
+                                <button class="button-secondary">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14V2M2 8H14" stroke="#0A0A0A" stroke-width="1"/>
+                                    </svg>
+                                    <span>Top</span>
                                 </button>
                             </div>
-                        </div>
-                        <div class="table-footer__actions">
-                            <button class="button">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2V14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                <span>Load More</span>
-                            </button>
-                            <button class="button">
-                                <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 14V2M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                <span>Top</span>
-                            </button>
                         </div>
                     </div>
                 </div>
