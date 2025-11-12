@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Report - Data Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#" class="app-name">Data Insights</a>
+            <nav>
+                <a href="#">Data Explorer</a>
+                <a href="#">Report Generator</a>
+                <a href="#">Team Workspace</a>
+            </nav>
+        </div>
+        <div class="user-avatar" title="User Profile">JD</div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1 class="page-title">Select report</h1>
+            <p class="page-subtitle">Select a report type to generate insights from your data.</p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Deep Analysis Card -->
+            <div class="report-card" data-card="deep-analysis">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Deep Analysis</h2>
+                        <p class="card-description">Perform advanced data analysis with AI-powered insights.</p>
+                    </div>
+                </div>
+                <div class="card-expanded">
+                    <div class="expanded-form">
+                        <label class="form-label" for="deep-analysis-input">Enter your query or upload data:</label>
+                        <textarea 
+                            id="deep-analysis-input" 
+                            class="form-textarea" 
+                            placeholder="Describe what you'd like to analyze or paste your data here..."
+                        ></textarea>
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="deep-analysis-checkbox" class="form-checkbox">
+                            <label for="deep-analysis-checkbox" class="form-checkbox-label">Include visual summary</label>
+                        </div>
+                        <button class="form-button" onclick="generateReport('deep-analysis')">Generate report</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Insights Card -->
+            <div class="report-card" data-card="product-insights">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                            <circle cx="12" cy="12" r="5"></circle>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Product Insights</h2>
+                        <p class="card-description">Identify user behavior and performance patterns.</p>
+                    </div>
+                </div>
+                <div class="card-expanded">
+                    <div class="expanded-form">
+                        <label class="form-label" for="product-insights-input">Select metrics and time range:</label>
+                        <textarea 
+                            id="product-insights-input" 
+                            class="form-textarea" 
+                            placeholder="Configure your product insights report..."
+                        ></textarea>
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="product-insights-checkbox" class="form-checkbox">
+                            <label for="product-insights-checkbox" class="form-checkbox-label">Include visual summary</label>
+                        </div>
+                        <button class="form-button" onclick="generateReport('product-insights')">Generate report</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trend Extraction Card -->
+            <div class="report-card" data-card="trend-extraction">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Trend Extraction</h2>
+                        <p class="card-description">Detect changes in performance metrics over time.</p>
+                    </div>
+                </div>
+                <div class="card-expanded">
+                    <div class="expanded-form">
+                        <label class="form-label" for="trend-extraction-input">Select metrics and date range:</label>
+                        <textarea 
+                            id="trend-extraction-input" 
+                            class="form-textarea" 
+                            placeholder="Configure your trend extraction report..."
+                        ></textarea>
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="trend-extraction-checkbox" class="form-checkbox">
+                            <label for="trend-extraction-checkbox" class="form-checkbox-label">Include visual summary</label>
+                        </div>
+                        <button class="form-button" onclick="generateReport('trend-extraction')">Generate report</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Queries Card -->
+            <div class="report-card" data-card="custom-queries">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                            <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                            <line x1="9" y1="20" x2="15" y2="20"></line>
+                            <line x1="12" y1="4" x2="12" y2="20"></line>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Custom Queries</h2>
+                        <p class="card-description">Create and save your own analytical queries.</p>
+                    </div>
+                </div>
+                <div class="card-expanded">
+                    <div class="expanded-form">
+                        <label class="form-label" for="custom-queries-input">Enter your custom query:</label>
+                        <textarea 
+                            id="custom-queries-input" 
+                            class="form-textarea" 
+                            placeholder="Write your custom analytical query here..."
+                        ></textarea>
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="custom-queries-checkbox" class="form-checkbox">
+                            <label for="custom-queries-checkbox" class="form-checkbox-label">Include visual summary</label>
+                        </div>
+                        <button class="form-button" onclick="generateReport('custom-queries')">Generate report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
